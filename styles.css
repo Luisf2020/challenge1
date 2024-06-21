@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #AAB2D5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%; /* Ancho ajustado para tablet */
+    max-width: 800px; /* Ancho máximo */
+    margin: 20px; /* Espacio alrededor del contenedor */
+}
+
+.text-areas {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+textarea {
+    width: 45%;
+    height: 300px; /* Altura reducida para celulares */
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row; /* Ajustado para botones en fila por defecto */
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #052051;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    width: 150px; /* Ancho fijo para botones en desktop */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Media queries para ajustes según el tamaño de la pantalla */
+
+@media (max-width: 768px) { /* Estilos para tablet y tamaños menores */
+    .container {
+        width: 90%; /* Ancho ajustado */
+    }
+
+    textarea {
+        height: 200px; /* Altura reducida */
+    }
+
+    .buttons {
+        flex-direction: column; /* Botones en columna para tablet */
+        align-items: center; /* Centrar botones en columna */
+    }
+
+    button {
+        width: 100%; /* Ancho completo para tablet */
+    }
+}
+
+@media (max-width: 480px) { /* Estilos para celulares y tamaños menores */
+    textarea {
+        height: 150px; /* Altura más reducida */
+        font-size: 14px; /* Tamaño de fuente reducido */
+    }
+
+    .buttons {
+        flex-direction: column; /* Botones en columna para celular */
+        align-items: center; /* Centrar botones en columna */
+    }
+
+    button {
+        width: 100%; /* Ancho completo para celular */
+        font-size: 14px; /* Tamaño de fuente reducido para celular */
+    }
+}
+
