@@ -1,50 +1,61 @@
-# challenge1
-Programa para encriptar y desencriptar 
+# SecureText Lab
 
-Descripción
-¡Bienvenidos a mi programa encriptador y desencriptador de texto! Esta aplicación te permite convertir tus mensajes en texto cifrado y descifrarlos de vuelta a su forma original. Desarrollado por Luis F. Zuniga, esta herramienta es perfecta para compartir mensajes secretos de manera segura.
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?logo=javascript&logoColor=111)
+![HTML5](https://img.shields.io/badge/HTML5-Semantic-E34F26?logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-Responsive-1572B6?logo=css3&logoColor=white)
 
-Características
-Encriptación: Transforma letras específicas según las siguientes reglas:
+Aplicación web educativa para **transformación reversible de texto** mediante reglas de sustitución. Permite codificar, restaurar y copiar resultados desde una interfaz ligera y responsive.
 
-'e' se convierte en 'enter'
-'i' se convierte en 'imes'
-'a' se convierte en 'ai'
-'o' se convierte en 'ober'
-'u' se convierte en 'ufat'
-Desencriptación: Revierte el texto encriptado al texto original basándose en las mismas reglas de sustitución.
+> **Nota:** este proyecto demuestra lógica de transformación de cadenas y manipulación del DOM. No implementa criptografía moderna y no debe utilizarse para proteger información sensible.
 
-Interfaz de Usuario: Incluye una interfaz simple construida con HTML, CSS y JavaScript que permite al usuario ingresar texto, encriptarlo, desencriptarlo y copiar el resultado al portapapeles.
+## Funcionalidades
 
-Uso
-Encriptación:
+- Transformación de texto mediante reglas predefinidas.
+- Proceso inverso para recuperar el texto original.
+- Normalización de entrada.
+- Copia rápida al portapapeles.
+- Interfaz responsive para escritorio y móvil.
+- Implementación 100 % frontend, sin dependencias externas.
 
-Ingresa el texto que deseas encriptar en el área de entrada.
-Haz clic en el botón "Encriptar".
-El texto encriptado aparecerá en el área de salida.
-Desencriptación:
+## Stack
 
-Ingresa el texto encriptado en el área de entrada.
-Haz clic en el botón "Desencriptar".
-El texto desencriptado aparecerá en el área de salida.
-Copiar al Portapapeles:
+- HTML5
+- CSS3
+- JavaScript
+- Web Clipboard API / DOM APIs
 
-Haz clic en el botón "Copiar".
-El texto en el área de salida se copiará automáticamente al portapapeles del usuario.
+## Estructura
 
-Instalación y Configuración
-No se requiere instalación. Simplemente clona el repositorio o descarga los archivos y abre index.html en tu navegador web preferido.
+```text
+challenge1/
+├── index.html
+├── styles.css
+├── script.js
+└── README.md
+```
 
-Autor
-Desarrollado por Luis F. Zuniga
+## Ejecución
 
-Contacto
-Para más información, contáctame por correo electrónico: luisfz1212@gmail.com
+```bash
+git clone https://github.com/Luisf2020/challenge1.git
+cd challenge1
+```
 
+Abre `index.html` en el navegador o utiliza **Live Server**.
 
+## Aprendizajes demostrados
 
-![image](https://github.com/Luisf2020/challenge1/assets/164415840/20b48099-9764-4822-af9b-15e52067f123)
+- Manipulación de strings.
+- Expresiones regulares.
+- Eventos del DOM.
+- Diseño responsive.
+- Operaciones de lectura/escritura en la interfaz.
 
-![image](https://github.com/Luisf2020/challenge1/assets/164415840/0c6358f5-f145-44c3-ba94-72334f8b10e2)
+## Autor
 
+**Luis Felipe Zuniga León**  
+Ingeniería de Sistemas · Desarrollo de Software · Full Stack
 
+---
+
+Proyecto de portafolio y aprendizaje técnico.
