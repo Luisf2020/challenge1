@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encriptador y Desencriptador</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SecureText Lab - proyecto frontend de transformación reversible de texto" />
+  <title>SecureText Lab</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div class="container">
-        <h1>Encriptador y Desencriptador de Luis f.</h1>
-        <div class="text-areas">
-            <textarea id="inputText" placeholder="Ingresa el texto aquí"></textarea>
-            <textarea id="outputText" readonly placeholder="Resultado aparecerá aquí"></textarea>
-        </div>
-        <div class="buttons">
-            <button onclick="encrypt()">Encriptar</button>
-            <button onclick="decrypt()">Desencriptar</button>
-            <button onclick="copyToClipboard()">Copiar</button>
-        </div>
+  <main class="container">
+    <div class="badge">JavaScript · Frontend</div>
+    <h1>SecureText Lab</h1>
+    <p class="subtitle">Transformador reversible de texto para demostrar lógica de cadenas y manipulación del DOM.</p>
+    <div class="notice">Proyecto educativo: no implementa criptografía moderna ni debe usarse para proteger información sensible.</div>
+    <div class="text-areas">
+      <label>Entrada<textarea id="inputText" placeholder="Escribe el texto aquí"></textarea></label>
+      <label>Resultado<textarea id="outputText" readonly placeholder="El resultado aparecerá aquí"></textarea></label>
     </div>
-
-    <script src="script.js"></script>
+    <div class="buttons">
+      <button onclick="encrypt()">Transformar</button>
+      <button class="secondary" onclick="decrypt()">Restaurar</button>
+      <button class="secondary" onclick="copyToClipboard()">Copiar</button>
+    </div>
+    <footer>Luis Felipe Zuniga León · Portfolio Project</footer>
+  </main>
+  <script src="script.js"></script>
 </body>
 </html>
