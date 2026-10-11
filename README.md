@@ -1,61 +1,72 @@
-# SecureText Lab
+# Encriptador de texto
 
-![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?logo=javascript&logoColor=111)
-![HTML5](https://img.shields.io/badge/HTML5-Semantic-E34F26?logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-Responsive-1572B6?logo=css3&logoColor=white)
+![stack: HTML5](https://img.shields.io/badge/stack--HTML5-0d9488?style=flat-square) ![stack: CSS3](https://img.shields.io/badge/stack--CSS3-0d9488?style=flat-square) ![stack: JavaScript](https://img.shields.io/badge/stack--JavaScript-0d9488?style=flat-square) ![IA: asistido](https://img.shields.io/badge/IA--asistido-6366f1?style=flat-square) [![Demo](https://img.shields.io/badge/demo-en%20vivo-22c55e?style=flat-square)](https://luisf2020.github.io/challenge1/)
 
-Aplicación web educativa para **transformación reversible de texto** mediante reglas de sustitución. Permite codificar, restaurar y copiar resultados desde una interfaz ligera y responsive.
+Encriptador y desencriptador de texto construido con JavaScript puro, sin dependencias ni framework.
 
-> **Nota:** este proyecto demuestra lógica de transformación de cadenas y manipulación del DOM. No implementa criptografía moderna y no debe utilizarse para proteger información sensible.
+**Tipo:** Aplicacion web estatica · **Complejidad:** Principiante
 
-## Funcionalidades
+## Problema que resuelve
 
-- Transformación de texto mediante reglas predefinidas.
-- Proceso inverso para recuperar el texto original.
-- Normalización de entrada.
-- Copia rápida al portapapeles.
-- Interfaz responsive para escritorio y móvil.
-- Implementación 100 % frontend, sin dependencias externas.
+Practicar la logica de transformacion de texto (reglas de sustitucion) y el manejo del DOM sin apoyarse en librerias.
+
+## Solucion implementada
+
+Funciones puras de cifrado y descifrado con reglas de sustitucion, conectadas a un formulario que valida la entrada y muestra el resultado en pantalla.
+
+### Funcionalidades principales
+
+- Cifrado y descifrado con reglas de sustitucion
+- Validacion de entrada (minusculas y sin caracteres especiales)
+- Copiado del resultado al portapapeles
+- Interfaz responsive sin dependencias
 
 ## Stack
 
 - HTML5
 - CSS3
 - JavaScript
-- Web Clipboard API / DOM APIs
 
 ## Estructura
 
-```text
-challenge1/
-├── index.html
-├── styles.css
-├── script.js
-└── README.md
+```
+index.html   # interfaz
+script.js    # logica de cifrado
+styles.css
 ```
 
-## Ejecución
+## Puesta en marcha
 
 ```bash
-git clone https://github.com/Luisf2020/challenge1.git
-cd challenge1
+# Abrir index.html en el navegador
+# o: python3 -m http.server 8000
 ```
 
-Abre `index.html` en el navegador o utiliza **Live Server**.
+## Complejidad del proyecto
 
-## Aprendizajes demostrados
+**Nivel: Principiante** — Sitio estatico de una sola pantalla, sin persistencia ni integraciones.
 
-- Manipulación de strings.
-- Expresiones regulares.
-- Eventos del DOM.
-- Diseño responsive.
-- Operaciones de lectura/escritura en la interfaz.
+El nivel describe la complejidad tecnica del proyecto, no el grado de dominio de quien lo escribio.
+
+## Despliegue
+
+Demo en vivo: <https://luisf2020.github.io/challenge1/>  
+Publicado con GitHub Pages (rama `gh-pages`).
+
+## Transparencia sobre IA
+
+Este proyecto se desarrollo con asistencia de inteligencia artificial (generacion de codigo,
+revision y documentacion). El codigo fue leido, ejecutado y probado manualmente. No se declaran
+clientes, metricas ni resultados que no puedan verificarse.
 
 ## Autor
 
-**Luis Felipe Zuniga León**  
-Ingeniería de Sistemas · Desarrollo de Software · Full Stack
+**Luis Felipe Zuniga Leon** — Desarrollador de software asistido por IA
+
+- GitHub: <https://github.com/Luisf2020>
+- Correo: developerluis2@gmail.com
+- WhatsApp: +504 3237 0056
 
 ---
 
-Proyecto de portafolio y aprendizaje técnico.
+_Proyecto de portafolio. El desarrollo se apoyo en herramientas de IA bajo revision tecnica humana._
